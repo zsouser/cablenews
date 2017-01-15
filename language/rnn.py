@@ -3,7 +3,7 @@ import numpy as np
 from tensorflow.python.ops import seq2seq
 
 class RNN:
-	def __init__(self, sequence_length, batch_size, vocabulary_size, embedding_size=128, num_units=64, learning_rate=0.01, bptt_truncate=4):
+	def __init__(self, sequence_length, batch_size, vocabulary_size, embedding_size=64, num_units=64, learning_rate=0.01, bptt_truncate=4):
 		print "Initialize RNN:"
 		print "[-] Vocabulary size of %s" % (vocabulary_size)
 		print "[-] Maximum sentence length of %s" % (sequence_length)
